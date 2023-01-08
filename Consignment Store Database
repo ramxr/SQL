@@ -1,0 +1,11 @@
+CREATE TABLE Consignment_Items (id INTEGER PRIMARY KEY, name TEXT, brand TEXT, color TEXT, size TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO Consignment_Items VALUES (1, "Top Shirt", "Hollister","Blue, Red, White", "Small", 3, 4);
+INSERT INTO Consignment_Items Values ( 2, "Sweater", "Hollister", "Light Blue, Maroon", "Small", 2, 6);
+INSERT INTO Consignment_Items VALUES ( 3, "Jeans", "Hollister", "Dark Wash, Light Wash ", "Small", 4, 8);
+INSERT INTO Consignment_Items VALUES ( 4, "Skirt", "Aeropostale", " Yellow, Black, White", "Small", 3, 4);
+INSERT INTO Consignment_Items VALUES (5, "Sandals", "Old Navy", "Red", "6", 1, 2);
+
+SELECT* From Consignment_Items;
+SELECT MAX(price) from Consignment_Items;
+SELECT SUM(quantity) from Consignment_Items
